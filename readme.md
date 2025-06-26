@@ -1,13 +1,13 @@
 # Java & Python & AI
-```
-실습 및 연습용입니다.
-책에서 제시된 코드를 제외하고 프로젝트의 실행 구조를 간단화하였습니다.
-```
+> [!NOTE]
+> 실습 및 연습용입니다. <br>
+> 책에서 제시된 코드를 제외하고 프로젝트의 실행 구조를 간단화하였습니다.
 
 ## 실습 저서
 > 자바 스프링 부트 프로젝트와 파이썬 AI 프로젝트 연결하기
 
 ## SDK
+> [!IMPORTANT]
 > 각 언어 사용된 SDK는 다음과 같습니다.<br>
 > 각 SDK는 직접 따로따로 설정해줘야 합니다.<br>
 > Intellij 기준 File > Project Structure 에서 설정하시면 됩니다.<br>
@@ -58,8 +58,10 @@ pip install -r requirements.txt
 | python-multipart | 0.0.9   | 멀티파트 폼 데이터를 파싱하기 위해 사용        |
 
 ## 기타 설명 및 주의사항
-- venv/, weights/ 폴더는 .gitignore에 포함되어 있음 
-- run_all.py 실행 시 Spring Boot + FastAPI 동시에 실행됨 
-- FastAPI 실행 시 yolov8n.pt 모델이 없으면 자동 다운로드되어 weights/ 폴더에 저장됨
-- 다시 언급하자면, 위의 weights/ 디렉토리에 생성된 모델은 git에서 제외함
-- 실행 중 로그는 [JAVA], [PYTHON] 태그로 구분되어 한 터미널에 출력됨
+> venv/, weights/ 폴더는 .gitignore에 포함되어 있음 <br> 
+> run_all.py 실행 시 Spring Boot + FastAPI 동시에 실행됨 <br> 
+> FastAPI 실행 시 yolov8n.pt 모델이 없으면 자동 다운로드되어 weights/ 폴더에 저장됨
+
+> [!WARNING]
+> 다시 언급하자면, 위의 weights/ 디렉토리에 생성된 모델은 git에서 제외함
+> 실행 중 로그는 [JAVA], [PYTHON] 태그로 구분되어 한 터미널에 출력됨
