@@ -1,5 +1,9 @@
+# IDE 설정
 .idea
 *.iml
 
+
 java_web/.gradle
 python_ai/.venv
+python_ai/weights
+*.pt
