@@ -58,6 +58,7 @@ pip install -r requirements.txt
 | python-multipart | 0.0.9   | 멀티파트 폼 데이터를 파싱하기 위해 사용        |
 
 ## 기타 설명 및 주의사항
+> [!NOTE]
 > venv/, weights/ 폴더는 .gitignore에 포함되어 있음 <br> 
 > run_all.py 실행 시 Spring Boot + FastAPI 동시에 실행됨 <br> 
 > FastAPI 실행 시 yolov8n.pt 모델이 없으면 자동 다운로드되어 weights/ 폴더에 저장됨
