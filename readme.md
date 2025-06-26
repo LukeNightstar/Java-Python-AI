@@ -63,5 +63,5 @@ pip install -r requirements.txt
 > FastAPI 실행 시 yolov8n.pt 모델이 없으면 자동 다운로드되어 weights/ 폴더에 저장됨
 
 > [!WARNING]
-> 다시 언급하자면, 위의 weights/ 디렉토리에 생성된 모델은 git에서 제외함
+> 다시 언급하자면, 위의 weights/ 디렉토리에 생성된 모델은 git에서 제외함 <br>
 > 실행 중 로그는 [JAVA], [PYTHON] 태그로 구분되어 한 터미널에 출력됨
