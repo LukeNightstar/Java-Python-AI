@@ -10,7 +10,9 @@
 ## SDK
 > 각 언어 사용된 SDK는 다음과 같습니다.<br>
 > 각 SDK는 직접 따로따로 설정해줘야 합니다.<br>
-> Intellij 기준 File > Project Structure 에서 설정하시면 됩니다.
+> Intellij 기준 File > Project Structure 에서 설정하시면 됩니다.<br>
+> 단 Python 경우 좀 복잡할 수도 있습니다.<br>
+> 하단에 기술해둔 Python venv 설정을 참고하시기 바랍니다.
 - JAVA : Eclipse Temurin - 21
 - Python : Python3 - 3.13.5
 
