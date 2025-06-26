@@ -7,6 +7,39 @@
 ## 실습 저서
 > 자바 스프링 부트 프로젝트와 파이썬 AI 프로젝트 연결하기
 
+## SDK
+> 각 언어 사용된 SDK는 다음과 같습니다.
+- JAVA : Eclipse Temurin - 21
+- Python : Python3 - 3.13.5
+
+## Project Dir
+```
+Java2Python/
+├── java_web/         # Spring Boot 프로젝트 (Gradle 기반)
+├── python_ai/        # FastAPI + AI 프로젝트
+│   ├── src/          # Python 소스 코드
+│   ├── weights/      # YOLO 모델 저장 폴더 (자동 생성됨)
+│   ├── .venv/        # Python 가상환경 (git 제외)
+│   └── run.py        # FastAPI 실행 진입점
+├── run_all.py        # Java + Python 동시 실행 스크립트
+└── readme.md
+```
+
+## Python venv 설정
+```
+# python_ai 디렉토리에서 실행
+cd python_ai
+
+# 가상환경 생성 (Python 3.13.5 기준)
+python3 -m venv .venv
+
+# 가상환경 활성화
+source .venv/bin/activate
+
+# 라이브러리 설치
+pip install -r requirements.txt
+```
+
 ## Python Library Lists
 | 라이브러리            | 버전      | 주요 기능                         |
 |------------------|---------|-------------------------------|
@@ -19,3 +52,10 @@
 | ultralytics      | 8.2.58  | YOLOv8 객체 탐지 모델 제공            |
 | opencv-python    | 4.10.0  | 이미지 및 비디오 처리, 컴퓨터 비전 기능       |
 | python-multipart | 0.0.9   | 멀티파트 폼 데이터를 파싱하기 위해 사용        |
+
+## 기타 설명 및 주의사항
+- venv/, weights/ 폴더는 .gitignore에 포함되어 있음 
+- run_all.py 실행 시 Spring Boot + FastAPI 동시에 실행됨 
+- FastAPI 실행 시 yolov8n.pt 모델이 없으면 자동 다운로드되어 weights/ 폴더에 저장됨
+- 다시 언급하자면, 위의 weights/ 디렉토리에 생성된 모델은 git에서 제외함
+- 실행 중 로그는 [JAVA], [PYTHON] 태그로 구분되어 한 터미널에 출력됨
